@@ -25,17 +25,26 @@
 
    		$data=array(
 
-   			'password'=> $this->input ->post('password'),
+   			'password'=> $this->input ->post('inputPassword4'),
    			'noPhone' =>$this->input ->post('inputPhone'), 
    			'fName'=>$this->input->post('fName'),
    			'lName'=>$this->input->post('lName'),
    		    'email' =>$this->input ->post('email'), 
+   		    'role' =>$this->input ->post('role'), 
+   		    'bookid' =>$this->input ->post('bookid'), 
    	);
 
    		return $this->db->insert('users',$data);
 
 
    	}
+
+      public function delete_post($id)
+      {
+         $this->db->where('id',$id);
+         $this->db->delete('users');
+         return true;
+      }
 
 
 
