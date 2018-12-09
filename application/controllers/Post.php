@@ -43,7 +43,7 @@
 			$this->load->library('form_validation');
 			 $this->load->helper('security');
 
-   			$data['title']='ADD NEW USERS';
+   			$data['title']='ADD NEW BOOKING';
 
    			$this-> form_validation ->set_rules('inputPassword4','Password','required');
 
