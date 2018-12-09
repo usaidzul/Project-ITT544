@@ -98,13 +98,19 @@
    			}
 
    			$data['title']='Edit User';
-   			echo "SUBMITTED";
+   		
 
 
    			$this->load->view('template/header');
 			$this->load->view('post/edit', $data);
 			$this->load->view('template/footer');
 
+   		}
+
+   		public function update()
+   		{
+   				$this->post_model->update_post();
+   				redirect('post');
    		}
 
 

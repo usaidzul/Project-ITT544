@@ -46,6 +46,28 @@
          return true;
       }
 
+     public function update_post()
+      {
+
+
+
+         $data = array (
+
+            'password'=> $this->input ->post('inputPassword4'),
+            'noPhone' =>$this->input ->post('inputPhone'), 
+            'fName'=>$this->input->post('fName'),
+            'lName'=>$this->input->post('lName'),
+             'email' =>$this->input ->post('email'), 
+             'role' =>$this->input ->post('role'), 
+             'bookid' =>$this->input ->post('bookid'), 
+      );
+
+         $this->db->where('id' ,$this->input->post('id'));
+         return $this->db->update('users',$data);
+                      
+
+      }
+
 
 
    	 }

@@ -2,9 +2,12 @@
 <h2><?= $title; ?></h2>
 <?php echo validation_errors(); ?>
 
-<?php echo form_open('post/create');?>
-
-  <div class="form-row">
+<?php echo form_open('post/update');?>
+ <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="id">Id</label>
+      <input type="number" class="form-control" name="id" readonly=readonly value="<?php echo $users['id'];?>">
+    </div>
   	 <div class="form-group col-md-6">
       <label for="inputPassword4">Password</label>
       <input type="password" class="form-control" name="inputPassword4" placeholder="Password"  value="<?php echo $users['password'];?>">
