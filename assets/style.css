@@ -1,0 +1,59 @@
+.form{
+    border: 5px goldenrod dotted;
+    width: 29%;
+    padding: 8px 20px;
+    align-content: center;
+}
+
+input[type=text], input[type=password] {
+    width: 30%;
+    padding: 8px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color:goldenrod;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 10px;
+    border: gold;
+    cursor: pointer;
+    width: 20%;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:black;
+}
+
+li {
+    float: left;
+}
+
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Calibri;
+}
+
+li a:hover {
+    background-color: goldenrod;
+}

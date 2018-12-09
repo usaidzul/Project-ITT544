@@ -76,6 +76,7 @@
    			else 
    			{
    				$this->post_model->create_post();
+   				$this->session->set_flashdata('post_created', 'Your info has been created');
    				redirect('post');
    			}
 
@@ -85,6 +86,7 @@
    		public function delete ($id)
    		{
    			$this->post_model->delete_post ($id);
+   			$this->session->set_flashdata('post_deleted', 'Your info has been deleted');
    			redirect('post');
    		}
 
@@ -110,6 +112,7 @@
    		public function update()
    		{
    				$this->post_model->update_post();
+   					$this->session->set_flashdata('post_updated', 'Your info has been updated');
    				redirect('post');
    		}
 

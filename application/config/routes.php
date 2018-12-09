@@ -1,6 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+
 $route['post/create'] = 'post/create';
 $route['post/update'] = 'post/update';
 $route['post/(:any)']='post/view/$1';
