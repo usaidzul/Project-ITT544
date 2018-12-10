@@ -13,9 +13,6 @@
 
           <!-- Content -->
           <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
-          <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit.</p>
-
         </div>
         <!-- Grid column -->
 
@@ -29,16 +26,16 @@
 
           <ul class="list-unstyled">
             <li>
-              <a href="#!">Link 1</a>
+              <a href="<?php echo base_url(); ?>">Home</a>
             </li>
             <li>
-              <a href="#!">Link 2</a>
+              <a href="<?php echo base_url(); ?>/about">About</a>
             </li>
             <li>
-              <a href="#!">Link 3</a>
+              <a href="<?php echo base_url(); ?>/post/book">Booking</a>
             </li>
             <li>
-              <a href="#!">Link 4</a>
+              <a href="<?php echo base_url(); ?>/post/create">Customer</a>
             </li>
           </ul>
 

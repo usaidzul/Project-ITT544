@@ -1,7 +1,7 @@
 
 <?php echo form_open('admin/loginadmin');?>
 
-<center>  <h2>Admin Login Form</h2> </center>
+<center>  <h2>Login Form</h2> </center>
 <!-- Form Name -->
 <center><legend>Login Here</legend></center>
 

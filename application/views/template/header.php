@@ -23,10 +23,13 @@
         <a class="nav-link" href="<?php echo base_url(); ?>/about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>/post">List</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>/post">List Customer</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url(); ?>/post/book">List Bookings</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>/post/create">Booking</a>
       </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
@@ -37,6 +40,7 @@
        <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>users/login">Login </a>
       </li>
+     
       <?php endif;?>
        <?php if($this->session->userdata('logged_in')) :?>
       <li class="nav-item">

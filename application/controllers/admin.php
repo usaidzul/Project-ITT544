@@ -25,12 +25,12 @@
 					// Create session
 					$admin_data = array(
 						'id' => $admin_id,
-				'username' => $username,
+						'username' => $username,
 						'logged_in' => true
 					);
 					$this->session->set_userdata($admin_data);
 					// Set message
-					$this->session->set_flashdata('admin_loggedin', 'You are now logged in');
+					$this->session->set_flashdata('logged_in', 'You are now logged in');
 					redirect('post');
 
 				} 

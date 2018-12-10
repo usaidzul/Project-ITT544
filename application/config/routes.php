@@ -1,7 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-
+//route['users/chooseuser'] = 'users/chooseuser';
+//$route['post/'] = 'post/index
+$route['post/book/(:any)']='post/viewBook/$1';
+$route['post/book'] = 'post/book';
 $route['post/create'] = 'post/create';
 $route['post/update'] = 'post/update';
 $route['post/(:any)']='post/view/$1';
