@@ -30,13 +30,18 @@
   </div>
 
   <div class="form-group">
-    <label for="inputPhone">Phone No</label>
-      <input type="text" class="form-control" name="inputPhone" placeholder="0123456789">
+    <label for="noPhone">Phone No</label>
+      <input type="text" class="form-control" name="noPhone" placeholder="0123456789">
+  </div>
+
+   <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" class="form-control" name="username" placeholder="Username">
   </div>
 
   <div class="form-group">
-      <label for="inputPassword4">Password</label>
-      <input type="password" class="form-control" name="inputPassword4" placeholder="Password">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" name="password" placeholder="Password">
   </div>
 
   <div class="form-row">

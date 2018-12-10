@@ -25,8 +25,9 @@
 
    		$data=array(
 
-   			'password'=> $this->input ->post('inputPassword4'),
-   			'noPhone' =>$this->input ->post('inputPhone'), 
+   			'password'=> $this->input ->post('password'),
+            'username'=> $this->input ->post('username'),
+   			'noPhone' =>$this->input ->post('noPhone'), 
    			'fName'=>$this->input->post('fName'),
    			'lName'=>$this->input->post('lName'),
    		    'email' =>$this->input ->post('email'), 
@@ -53,8 +54,9 @@
 
          $data = array (
 
-            'password'=> $this->input ->post('inputPassword4'),
-            'noPhone' =>$this->input ->post('inputPhone'), 
+            'password'=> $this->input ->post('password'),
+            'noPhone' =>$this->input ->post('noPhone'),
+              'username'=> $this->input ->post('username'), 
             'fName'=>$this->input->post('fName'),
             'lName'=>$this->input->post('lName'),
              'email' =>$this->input ->post('email'), 

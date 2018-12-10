@@ -9,12 +9,16 @@
       <input type="number" class="form-control" name="id" readonly=readonly value="<?php echo $users['id'];?>">
     </div>
   	 <div class="form-group col-md-6">
-      <label for="inputPassword4">Password</label>
-      <input type="password" class="form-control" name="inputPassword4" placeholder="Password"  value="<?php echo $users['password'];?>">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" name="password" placeholder="Password"  value="<?php echo $users['password'];?>">
     </div>
     <div class="form-group col-md-6">
-      <label for="inputPhone">Phone No</label>
-      <input type="text" class="form-control" name="inputPhone" placeholder="0123456789" value="<?php echo $users['noPhone'];?>">
+      <label for="username">Username</label>
+      <input type="text" class="form-control" name="username" placeholder="Username"  value="<?php echo $users['username'];?>">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="noPhone">Phone No</label>
+      <input type="text" class="form-control" name="noPhone" placeholder="0123456789" value="<?php echo $users['noPhone'];?>">
     </div>
   </div>
   <div class="form-group">

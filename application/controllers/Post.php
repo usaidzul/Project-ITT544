@@ -4,6 +4,11 @@
 
    		public function index()
    		{
+
+              if(!$this->session->userdata('logged_in'))
+            {
+               redirect ('users/login');
+            }
    			$data['title']='LIST OF USERS';
 
    			$data['user'] = $this -> post_model->get_post();
@@ -17,6 +22,8 @@
 
    		public function view($id = NULL)
    		{
+
+
    			
    			$data['users'] = $this->post_model->get_post($id);
 
@@ -45,9 +52,11 @@
 
    			$data['title']='ADD NEW BOOKING';
 
-   			$this-> form_validation ->set_rules('inputPassword4','Password','required');
+   			$this-> form_validation ->set_rules('password','Password','required');
 
-   			$this-> form_validation ->set_rules('inputPhone','Phone No','required');
+            $this-> form_validation ->set_rules('username',' Username','required');
+
+   			$this-> form_validation ->set_rules('noPhone','Phone No','required');
 
    			$this-> form_validation ->set_rules('fName','First Name','required');
 
@@ -59,13 +68,8 @@
 
    			$this-> form_validation->set_rules('bookid','Book Id','required');
 
-
-
-
    			if($this-> form_validation ->run() == FALSE)
    			{
-
-   		
 
    			$this->load->view('template/header');
 			$this->load->view('post/create', $data);

@@ -30,13 +30,24 @@
       </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
+      <?php if(!$this->session->userdata('logged_in')) :?>
+       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>users/register">Register </a>
       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url(); ?>users/login">Login </a>
+      </li>
+      <?php endif;?>
+       <?php if($this->session->userdata('logged_in')) :?>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url(); ?>users/logout">Logout </a>
+      </li>
+         <?php endif;?>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+   <!-- <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search">
       <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    </form> -->
   </div>
 </nav>
 
@@ -46,6 +57,19 @@
     <?php echo '<p class="alert alert-success">'
 .$this->session->flashdata('user_registered').'</p>';?>
     <?php endif;?>
+
+     <?php if($this->session->flashdata('user_loggedin')):?>
+    <?php echo '<p class="alert alert-success">'
+.$this->session->flashdata('user_loggedin').'</p>';?>
+    <?php endif;?>
+
+    <?php if($this->session->flashdata('user_loggedout')):?>
+    <?php echo '<p class="alert alert-success">'
+.$this->session->flashdata('user_loggedout').'</p>';?>
+    <?php endif;?>
+
+
+
 
      
 
