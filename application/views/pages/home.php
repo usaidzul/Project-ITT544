@@ -1,14 +1,11 @@
-<h2><?=$title?></h2>
-<h1> Welcome to Hotel Reservation System</h1>
-
-<p>This system is to booking hotel</p>
-
+<br>
+<br>
 <!-- Automatic Slideshow Images -->
   <div class="mySlides w3-display-container w3-center">
   <img src="<?php echo base_url('images/1157073_16062412150044053329.jpg'); ?>" style="width:60%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Los Angeles</h3>
-      <p><b>We had the best time playing at Venice Beach!</b></p>   
+      <h3> Los Angeles</h3>
+      <p><b>Welcome to Hotel FUSA!</b></p>   
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
