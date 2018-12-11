@@ -9,11 +9,7 @@
       <div class="row">
 
         <!-- Grid column -->
-        <div class="col-md-4 mx-auto">
-
-          <!-- Content -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
-        </div>
+      
         <!-- Grid column -->
 
         <hr class="clearfix w-100 d-md-none">
@@ -48,50 +44,48 @@
         <div class="col-md-2 mx-auto">
 
           <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">Link 1</a>
-            </li>
-            <li>
-              <a href="#!">Link 2</a>
-            </li>
-            <li>
-              <a href="#!">Link 3</a>
-            </li>
-            <li>
-              <a href="#!">Link 4</a>
-            </li>
-          </ul>
-
+           <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Social Media</h5>
+        <center> <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a>
+            </center>
+         
+        </footer>
         </div>
         <!-- Grid column -->
 
-        <hr class="clearfix w-100 d-md-none">
+        
+
+        <!-- Grid column -->
+       
+
+          <!-- Links -->
+         <hr class="clearfix w-100 d-md-none">
 
         <!-- Grid column -->
         <div class="col-md-2 mx-auto">
 
           <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
 
           <ul class="list-unstyled">
             <li>
-              <a href="#!">Link 1</a>
+              <p class="w3-opacity w3-center"><i>Need Help?</i></p>
             </li>
             <li>
-              <a href="#!">Link 2</a>
+            <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US
             </li>
             <li>
-              <a href="#!">Link 3</a>
+               <i class="fa fa-phone" style="width:3s0px"></i> Phone:+00151515
             </li>
             <li>
-              <a href="#!">Link 4</a>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email:mail@mail.com
             </li>
           </ul>
 
         </div>
+      
         <!-- Grid column -->
 
       </div>

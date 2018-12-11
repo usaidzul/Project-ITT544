@@ -95,10 +95,10 @@
 
 
 
-            if(!$this->session->userdata('logged_in'))
+            /*if(!$this->session->userdata('logged_in'))
             {
                redirect ('post/create');
-            }
+            }*/
          $data['title']='ADD NEW BOOKING';
 
 
