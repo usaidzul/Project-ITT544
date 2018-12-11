@@ -1,6 +1,6 @@
 <?php
 
-defined('BASEPATH') OR exit('No direct script access allowed');
+/*defined('BASEPATH') OR exit('No direct script access allowed');
 class Ajaxsearch extends CI_Controller
 {
 
@@ -20,8 +20,8 @@ class Ajaxsearch extends CI_Controller
 		{
 			$query=$this->input->post('query');
 			   $this->load->view('template/header');
-         $this->load->view('post/ajaxsearch', $data);
-         $this->load->view('template/footer');
+         		$this->load->view('post/book');
+         		$this->load->view('template/footer');
 
 		}
 
@@ -35,7 +35,7 @@ class Ajaxsearch extends CI_Controller
        <th>Address</th>
        <th>City</th>
        <th>Postal Code</th>
-       <th>Country</th>
+      
       </tr>
 
 
@@ -48,11 +48,10 @@ class Ajaxsearch extends CI_Controller
 			{
 				 $output .= '
       	<tr>
-       <td>'.$row->CustomerName.'</td>
-       <td>'.$row->Address.'</td>
-       <td>'.$row->City.'</td>
-       <td>'.$row->PostalCode.'</td>
-       <td>'.$row->Country.'</td>
+       <td>'.$row->date.'</td>
+       <td>'.$row->days.'</td>
+       <td>'.$row->id.'</td>
+       <td>'.$row->roomid.'</td>
       </tr>
     ';
 			}
@@ -72,4 +71,4 @@ class Ajaxsearch extends CI_Controller
 	}
 
 
-}
+}*/

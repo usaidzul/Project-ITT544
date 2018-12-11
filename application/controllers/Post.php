@@ -2,12 +2,12 @@
    
    class Post extends CI_Controller{
 
-      function __construct() {
+     /* function __construct() {
         parent::__construct();
         $this->load->model('post_model');
         $this->load->library('Ajax_pagination');
-        $this->perPage = 2;
-    }
+        $this->perPage = 2;*/
+    
 
    		public function index()
    		{
@@ -39,8 +39,8 @@
             $data['book'] = $this -> post_model->get_book();
 
             $this->load->view('template/header');
-         $this->load->view('post/book', $data);
-         $this->load->view('template/footer');
+            $this->load->view('post/book', $data);
+            $this->load->view('template/footer');
 
          
          }
@@ -157,12 +157,12 @@
    			redirect('post');
    		}
 
-         public function deleteBook ($id)
+         /*public function deleteBook ($id)
          {
             $this->post_model->delete_post ($id);
             $this->session->set_flashdata('post_deleted', 'Your info has been deleted');
             redirect('post');
-         }
+         }*/
 
    		public function edit ($id)
    		{
@@ -189,6 +189,74 @@
    					$this->session->set_flashdata('post_updated', 'Your info has been updated');
    				redirect('post');
    		}
+
+         public function search()
+   {
+
+      $this->load->view('post/book');
+
+   }
+
+   public function fetch()
+   {
+      $output='';
+      $query='';
+      $this->load->model('post_model');
+      if($this->input->post('query'))
+      {
+         $query=$this->input->post('query');
+          
+               
+              
+
+      }
+
+      $data=$this->post_model->fetch_data($query);
+      //$this->load->view('post/book',$data);
+      $output .='
+
+      <div class="table-responsive">
+     <table class="table table-bordered table-striped">
+      <tr>
+       <th>Customer Name</th>
+       <th>Address</th>
+       <th>City</th>
+       <th>Postal Code</th>
+      
+      </tr>
+
+
+      ';
+
+      if($data->num_rows()>0)
+      {
+
+         foreach($data->result() as $row)
+         {
+             $output .= '
+         <tr>
+       <td>'.$row->bookid.'</td>
+        <td>'.$row->date.'</td>
+       <td>'.$row->days.'</td>
+       <td>'.$row->id.'</td>
+       <td>'.$row->roomid.'</td>
+      </tr>
+    ';
+         }
+
+      }
+      else
+      {
+
+         $output.='<tr>
+       <td colspan="5">No Data Found</td>
+      </tr>';
+
+      }
+
+      $output .='</table>';
+      echo $output;
+   }
 
       
 }

@@ -58,12 +58,12 @@
          return true;
       }
 
-       public function deleteBook_post($bid)
+     /*  public function deleteBook_post($bid)
       {
          $this->db->where('bookid',$bid);
          $this->db->delete('bookings');
          return true;
-      }
+      }*/
 
      public function update_post()
       {
@@ -87,7 +87,23 @@
                       
 
       }
+   public function fetch_data($query)
+  {
+    $this->db->select("*");
+    $this->db->from("bookings");
+    if($query!='')
+    {
+      $this->db->like('bookid',$query);
+     // $this->db->or_like('date',$query);
+     // $this->db->or_like('days',$query);
+     // $this->db->or_like('id',$query);
+      //$this->db->or_like('roomid',$query);
 
+    }
+
+    $this->db->order_by('bookid','DESC');
+    return $this->db->get();
+  }
       
 
 }
