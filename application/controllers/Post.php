@@ -97,7 +97,7 @@
 
             if(!$this->session->userdata('logged_in'))
             {
-               redirect ('users/login');
+               redirect ('post/create');
             }
          $data['title']='ADD NEW BOOKING';
 
@@ -206,10 +206,7 @@
       {
          $query=$this->input->post('query');
           
-               
-              
-
-      }
+     }
 
       $data=$this->post_model->fetch_data($query);
       //$this->load->view('post/book',$data);
@@ -218,11 +215,11 @@
       <div class="table-responsive">
      <table class="table table-bordered table-striped">
       <tr>
-       <th>Customer Name</th>
-       <th>Address</th>
-       <th>City</th>
-       <th>Postal Code</th>
-      
+       <th>Booking ID</th>
+       <th>Booking Date</th>
+       <th>No of Days</th>
+       <th>Customer ID </th>
+       <th>Room ID </th>
       </tr>
 
 
