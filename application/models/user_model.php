@@ -11,8 +11,8 @@
             'email' =>$this->input ->post('email'), 
             'noPhone' =>$this->input ->post('noPhone'), 
              'password'=> $enc_password,
-             'role' =>$this->input ->post('role'), 
-             'bookid' =>$this->input ->post('bookid'), 
+             //'role' =>$this->input ->post('role'), 
+             //'bookid' =>$this->input ->post('bookid'), 
       );
 
   		   //insert

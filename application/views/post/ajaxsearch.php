@@ -1,14 +1,17 @@
-
- <title>Live Data Search in Codeigniter using Ajax JQuery</title>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Live Data Search in Codeigniter using Ajax JQuery</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-
- <div class="container">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+ </head>
+ <body>
+  <div class="container">
    <br />
    <br />
    <br />
-   <h2 align="center"><?=$title?></h2><br />
+   <h2 align="center">Live Data Search in Codeigniter using Ajax JQuery</h2><br />
    <div class="form-group">
     <div class="input-group">
      <span class="input-group-addon">Search</span>
@@ -23,8 +26,11 @@
   <br />
   <br />
   <br />
+ </body>
+</html>
 
-  <script>
+
+<script>
 $(document).ready(function(){
 
  load_data();
@@ -32,7 +38,7 @@ $(document).ready(function(){
  function load_data(query)
  {
   $.ajax({
-   url:"<?php echo base_url(); ?>Ajaxsearch/fetch",
+   url:"<?php echo base_url(); ?>ajaxsearch/fetch",
    method:"POST",
    data:{query:query},
    success:function(data){
@@ -54,17 +60,3 @@ $(document).ready(function(){
  });
 });
 </script>
-<?php foreach($book as $books) : ?>
-
- <h3><?php echo $books['bookid']; ?></h3>
- <small>Booking Date:<?php echo $books['date'];?></small><br>
- Days Book:<?php echo $books['days']; ?>
- Cust ID:<?php echo $books['id']; ?>
- Room ID:<?php echo $books['roomid']; ?>
- <br><br>
-<?php endforeach; ?>
-
-
-
-
-

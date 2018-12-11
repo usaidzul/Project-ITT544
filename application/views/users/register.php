@@ -46,7 +46,7 @@
 
   <div class="form-row">
 
-    <div class="form-group col-md-6">
+    <!--<div class="form-group col-md-6">
       <label for="role">Role</label>
       <input type="number" class="form-control" name="role">
     </div>
@@ -54,7 +54,7 @@
     <div class="form-group">
     <label for="bookid">Book id</label>
     <input type="text" class="form-control" name="bookid" placeholder="">
-  </div>
+  </div>-->
 
    </div>
   <!--</div>-->
