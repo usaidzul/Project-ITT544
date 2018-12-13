@@ -104,9 +104,9 @@
 
             $data['booking'] = $this -> post_model->get_post();
 
-            $this->load->view('template/header');
+           /* $this->load->view('template/header');
          $this->load->view('post/create', $data);
-         $this->load->view('template/footer');
+         $this->load->view('template/footer');*/
 
 
    			$this->load->helper(array('form', 'url'));
@@ -255,8 +255,10 @@
       echo $output;
    }
 
-      
 }
+
+
+
 
          
 
