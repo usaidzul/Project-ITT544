@@ -144,7 +144,7 @@
    			{
    				$this->post_model->create_post();
    				$this->session->set_flashdata('post_created', 'Your info has been created');
-   				redirect('post');
+   				redirect('post/book');
    			}
 
    		}
